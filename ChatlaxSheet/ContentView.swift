@@ -8,31 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isChatlaxSheetPresented = false
-    
-    var body: some View {
-        ZStack {
-            TabView {
-                ZStack {
-                    Color.yellow
-                        .ignoresSafeArea()
-                    Button {
-                        isChatlaxSheetPresented = true
-                    } label: {
-                        Text("Press")
-                    }
-                }
-                .tabItem { Text("One") }
-                Color.green
-                    .ignoresSafeArea()
-                    .tabItem { Text("Two") }
-                Color.red
-                    .ignoresSafeArea()
-                    .tabItem { Text("Three") }
-            }
-            BottomSheetView(isChatlaxSheetPresented: $isChatlaxSheetPresented)
-        }
-    }
+	@State private var isChatlaxSheetPresented = false
+	
+	var body: some View {
+		ZStack {
+			TabView {
+				ZStack {
+					Color.yellow
+						.ignoresSafeArea()
+					Button {
+						withAnimation(.easeOut) {
+							isChatlaxSheetPresented.toggle()
+						}
+					} label: {
+						Text("Press")
+					}
+				}
+				.tabItem { Text("One") }
+				Color.green
+					.ignoresSafeArea()
+					.tabItem { Text("Two") }
+				Color.red
+					.ignoresSafeArea()
+					.tabItem { Text("Three") }
+			}
+			BottomSheetView(isChatlaxSheetPresented: $isChatlaxSheetPresented)
+		}
+	}
 }
 
 //struct ContentView_Previews: PreviewProvider {
