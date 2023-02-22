@@ -14,25 +14,14 @@ struct BottomSheetView: View {
 	
 	var body: some View {
 		ZStack(alignment: .bottom) {
-			if isChatlaxSheetPresented {
-				Color.black
-					.opacity(0.3)
-					.ignoresSafeArea()
-					.onTapGesture {
-						withAnimation(.easeOut) {
-							isChatlaxSheetPresented.toggle()
-						}
-					}
-				ZStack(alignment: .top) {
+			VStack {
+				Spacer()
+				if isChatlaxSheetPresented {
 					Image("vw")
 						.resizable()
 						.scaledToFit()
-					Capsule()
-						.frame(width: 50, height: 5)
-						.foregroundColor(Color.black)
-						.padding(.top, 10)
+						.transition(.move(edge: .bottom))
 				}
-				.transition(.move(edge: .bottom))
 			}
 		}
 		.ignoresSafeArea()

@@ -16,12 +16,15 @@ struct ContentView: View {
 				ZStack {
 					Color.yellow
 						.ignoresSafeArea()
-					Button {
-						withAnimation(.easeOut) {
-							isChatlaxSheetPresented.toggle()
+					VStack {
+						Button {
+							withAnimation(.easeOut) {
+								isChatlaxSheetPresented.toggle()
+							}
+						} label: {
+							Text("Press")
 						}
-					} label: {
-						Text("Press")
+						Spacer()
 					}
 				}
 				.tabItem { Text("One") }
