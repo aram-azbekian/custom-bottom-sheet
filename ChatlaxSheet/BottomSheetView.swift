@@ -10,10 +10,17 @@ import SwiftUI
 struct BottomSheetView: View {
 	
 	@Binding var isChatlaxSheetPresented: Bool
-	@State private var offset: CGFloat = .zero
 	
 	var body: some View {
-		ZStack(alignment: .bottom) {
+		ZStack {
+			if isChatlaxSheetPresented {
+				Color.black
+					.opacity(0.3)
+					.transition(.opacity)
+					.onTapGesture {
+						isChatlaxSheetPresented.toggle()
+					}
+			}
 			VStack {
 				Spacer()
 				if isChatlaxSheetPresented {

@@ -18,9 +18,7 @@ struct ContentView: View {
 						.ignoresSafeArea()
 					VStack {
 						Button {
-							withAnimation(.easeOut) {
-								isChatlaxSheetPresented.toggle()
-							}
+							isChatlaxSheetPresented.toggle()
 						} label: {
 							Text("Press")
 						}
@@ -36,6 +34,7 @@ struct ContentView: View {
 					.tabItem { Text("Three") }
 			}
 			BottomSheetView(isChatlaxSheetPresented: $isChatlaxSheetPresented)
+				.animation(.easeOut(duration: 0.3), value: isChatlaxSheetPresented)
 		}
 	}
 }
