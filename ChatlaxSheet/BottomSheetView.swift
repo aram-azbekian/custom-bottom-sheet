@@ -10,6 +10,7 @@ import SwiftUI
 struct BottomSheetView: View {
 	
 	@Binding var isChatlaxSheetPresented: Bool
+	@State private var offset: CGFloat = .zero
 	
 	var body: some View {
 		ZStack {
@@ -34,6 +35,20 @@ struct BottomSheetView: View {
 							.padding(.top, 10)
 					}
 					.transition(.move(edge: .bottom))
+					.gesture(
+						DragGesture()
+							.onChanged({ value in
+								if offset >= -20 {
+									offset += value.translation.height
+								}
+							})
+							.onEnded({ _ in
+								if offset <= -20 {
+									offset = 0
+								}
+							})
+					)
+					.offset(y: offset)
 				}
 			}
 		}
