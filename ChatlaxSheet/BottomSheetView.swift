@@ -24,10 +24,16 @@ struct BottomSheetView: View {
 			VStack {
 				Spacer()
 				if isChatlaxSheetPresented {
-					Image("vw")
-						.resizable()
-						.scaledToFit()
-						.transition(.move(edge: .bottom))
+					ZStack(alignment: .top) {
+						Image("vw")
+							.resizable()
+							.scaledToFit()
+						Capsule()
+							.frame(width: 50, height: 5)
+							.foregroundColor(Color.black)
+							.padding(.top, 10)
+					}
+					.transition(.move(edge: .bottom))
 				}
 			}
 		}
