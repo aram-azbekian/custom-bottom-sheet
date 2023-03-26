@@ -7,29 +7,29 @@
 
 import SwiftUI
 
-struct BottomSheetView: View {
+struct BottomSheetView<Content: View>: View {
 	
-	@Binding var isChatlaxSheetPresented: Bool
+	@Binding var isSheetPresented: Bool
+	@ViewBuilder var content: () -> Content
+	
 	@State private var offset: CGFloat = .zero
 	@State private var size: CGSize = .zero
 	
 	var body: some View {
 		ZStack {
-			if isChatlaxSheetPresented {
+			if isSheetPresented {
 				Color.black
 					.opacity(0.3)
 					.transition(.opacity)
 					.onTapGesture {
-						isChatlaxSheetPresented.toggle()
+						isSheetPresented.toggle()
 					}
 			}
 			VStack {
 				Spacer()
-				if isChatlaxSheetPresented {
+				if isSheetPresented {
 					ZStack(alignment: .top) {
-						Image("vw")
-							.resizable()
-							.scaledToFit()
+						content()
 						Capsule()
 							.frame(width: 50, height: 5)
 							.foregroundColor(Color.black)
@@ -48,7 +48,7 @@ struct BottomSheetView: View {
 								if offset <= size.height / 2 {
 									offset = 0
 								} else {
-									isChatlaxSheetPresented.toggle()
+									isSheetPresented.toggle()
 									offset = 0
 								}
 							})

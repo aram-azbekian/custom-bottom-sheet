@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-	@State private var isChatlaxSheetPresented = false
+	@State private var isImageSheetPresented = false
+	@State private var isTextSheetPresented = false
+	@State private var isGridSheetPresented = false
 	
 	var body: some View {
 		ZStack {
@@ -17,11 +19,27 @@ struct ContentView: View {
 					Color.yellow
 						.ignoresSafeArea()
 					VStack {
+						// image view
 						Button {
-							isChatlaxSheetPresented.toggle()
+							isImageSheetPresented.toggle()
 						} label: {
-							Text("Press")
+							Text("Open image sheet")
 						}
+						
+						// some text view
+						Button {
+							isTextSheetPresented.toggle()
+						} label: {
+							Text("Open text sheet")
+						}
+						
+						// some text view
+						Button {
+							isGridSheetPresented.toggle()
+						} label: {
+							Text("Open grid sheet")
+						}
+						
 						Spacer()
 					}
 				}
@@ -33,8 +51,30 @@ struct ContentView: View {
 					.ignoresSafeArea()
 					.tabItem { Text("Three") }
 			}
-			BottomSheetView(isChatlaxSheetPresented: $isChatlaxSheetPresented)
-				.animation(.easeOut(duration: 0.3), value: isChatlaxSheetPresented)
+			
+			BottomSheetView(isSheetPresented: $isImageSheetPresented, content: {
+				Image("vw")
+					.resizable()
+					.scaledToFit()
+			})
+			.animation(.easeOut(duration: 0.3), value: isImageSheetPresented)
+			
+			BottomSheetView(isSheetPresented: $isTextSheetPresented, content: {
+				HStack {
+					Text("sample text")
+					Image(systemName: "heart.fill")
+				}
+				.font(.system(size: 35))
+				.frame(maxWidth: .infinity)
+				.frame(height: 150)
+				.background(Color.white)
+			})
+			.animation(.easeOut(duration: 0.3), value: isTextSheetPresented)
+			
+			BottomSheetView(isSheetPresented: $isGridSheetPresented, content: {
+				SampleGridView()
+			})
+			.animation(.easeOut(duration: 0.3), value: isGridSheetPresented)
 		}
 	}
 }
