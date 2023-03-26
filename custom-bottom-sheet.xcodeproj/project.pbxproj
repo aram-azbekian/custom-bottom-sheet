@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24206D93299167F6002ACD33 /* CusomBottomSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24206D92299167F6002ACD33 /* CusomBottomSheetApp.swift */; };
+		24206D93299167F6002ACD33 /* CustomBottomSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24206D92299167F6002ACD33 /* CustomBottomSheetApp.swift */; };
 		24206D95299167F6002ACD33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24206D94299167F6002ACD33 /* ContentView.swift */; };
 		24206D97299167F6002ACD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24206D96299167F6002ACD33 /* Assets.xcassets */; };
 		24206D9A299167F6002ACD33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24206D99299167F6002ACD33 /* Preview Assets.xcassets */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		24206D8F299167F6002ACD33 /* custom-bottom-sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-bottom-sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		24206D92299167F6002ACD33 /* CusomBottomSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusomBottomSheetApp.swift; sourceTree = "<group>"; };
+		24206D92299167F6002ACD33 /* CustomBottomSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomSheetApp.swift; sourceTree = "<group>"; };
 		24206D94299167F6002ACD33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24206D96299167F6002ACD33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24206D99299167F6002ACD33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		24206D91299167F6002ACD33 /* custom-bottom-sheet */ = {
 			isa = PBXGroup;
 			children = (
-				24206D92299167F6002ACD33 /* CusomBottomSheetApp.swift */,
+				24206D92299167F6002ACD33 /* CustomBottomSheetApp.swift */,
 				24206D94299167F6002ACD33 /* ContentView.swift */,
 				24206D96299167F6002ACD33 /* Assets.xcassets */,
 				24206D98299167F6002ACD33 /* Preview Content */,
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24206D95299167F6002ACD33 /* ContentView.swift in Sources */,
-				24206D93299167F6002ACD33 /* CusomBottomSheetApp.swift in Sources */,
+				24206D93299167F6002ACD33 /* CustomBottomSheetApp.swift in Sources */,
 				24206DA129916AB8002ACD33 /* BottomSheetView.swift in Sources */,
 				24DAD06129D0B256008E70D3 /* SampleGridView.swift in Sources */,
 				2429B1B329ABD31D009A732B /* Utils.swift in Sources */,

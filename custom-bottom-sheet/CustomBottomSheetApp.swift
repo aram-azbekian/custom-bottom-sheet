@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CusomBottomSheetApp: App {
+struct CustomBottomSheetApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
