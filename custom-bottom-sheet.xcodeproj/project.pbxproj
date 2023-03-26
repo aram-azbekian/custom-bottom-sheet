@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24206D93299167F6002ACD33 /* ChatlaxSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24206D92299167F6002ACD33 /* ChatlaxSheetApp.swift */; };
+		24206D93299167F6002ACD33 /* CusomBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24206D92299167F6002ACD33 /* CusomBottomSheet.swift */; };
 		24206D95299167F6002ACD33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24206D94299167F6002ACD33 /* ContentView.swift */; };
 		24206D97299167F6002ACD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24206D96299167F6002ACD33 /* Assets.xcassets */; };
 		24206D9A299167F6002ACD33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24206D99299167F6002ACD33 /* Preview Assets.xcassets */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24206D8F299167F6002ACD33 /* ChatlaxSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatlaxSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24206D92299167F6002ACD33 /* ChatlaxSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatlaxSheetApp.swift; sourceTree = "<group>"; };
+		24206D8F299167F6002ACD33 /* custom-bottom-sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-bottom-sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24206D92299167F6002ACD33 /* CusomBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusomBottomSheet.swift; sourceTree = "<group>"; };
 		24206D94299167F6002ACD33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24206D96299167F6002ACD33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24206D99299167F6002ACD33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		24206D86299167F6002ACD33 = {
 			isa = PBXGroup;
 			children = (
-				24206D91299167F6002ACD33 /* ChatlaxSheet */,
+				24206D91299167F6002ACD33 /* custom-bottom-sheet */,
 				24206D90299167F6002ACD33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,15 +49,15 @@
 		24206D90299167F6002ACD33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24206D8F299167F6002ACD33 /* ChatlaxSheet.app */,
+				24206D8F299167F6002ACD33 /* custom-bottom-sheet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24206D91299167F6002ACD33 /* ChatlaxSheet */ = {
+		24206D91299167F6002ACD33 /* custom-bottom-sheet */ = {
 			isa = PBXGroup;
 			children = (
-				24206D92299167F6002ACD33 /* ChatlaxSheetApp.swift */,
+				24206D92299167F6002ACD33 /* CusomBottomSheet.swift */,
 				24206D94299167F6002ACD33 /* ContentView.swift */,
 				24206D96299167F6002ACD33 /* Assets.xcassets */,
 				24206D98299167F6002ACD33 /* Preview Content */,
@@ -65,7 +65,7 @@
 				2429B1B229ABD31D009A732B /* Utils.swift */,
 				24DAD06029D0B256008E70D3 /* SampleGridView.swift */,
 			);
-			path = ChatlaxSheet;
+			path = "custom-bottom-sheet";
 			sourceTree = "<group>";
 		};
 		24206D98299167F6002ACD33 /* Preview Content */ = {
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24206D8E299167F6002ACD33 /* ChatlaxSheet */ = {
+		24206D8E299167F6002ACD33 /* custom-bottom-sheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24206D9D299167F6002ACD33 /* Build configuration list for PBXNativeTarget "ChatlaxSheet" */;
+			buildConfigurationList = 24206D9D299167F6002ACD33 /* Build configuration list for PBXNativeTarget "custom-bottom-sheet" */;
 			buildPhases = (
 				24206D8B299167F6002ACD33 /* Sources */,
 				24206D8C299167F6002ACD33 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = ChatlaxSheet;
+			name = "custom-bottom-sheet";
 			productName = ChatlaxSheet;
-			productReference = 24206D8F299167F6002ACD33 /* ChatlaxSheet.app */;
+			productReference = 24206D8F299167F6002ACD33 /* custom-bottom-sheet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24206D8A299167F6002ACD33 /* Build configuration list for PBXProject "ChatlaxSheet" */;
+			buildConfigurationList = 24206D8A299167F6002ACD33 /* Build configuration list for PBXProject "custom-bottom-sheet" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24206D8E299167F6002ACD33 /* ChatlaxSheet */,
+				24206D8E299167F6002ACD33 /* custom-bottom-sheet */,
 			);
 		};
 /* End PBXProject section */
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24206D95299167F6002ACD33 /* ContentView.swift in Sources */,
-				24206D93299167F6002ACD33 /* ChatlaxSheetApp.swift in Sources */,
+				24206D93299167F6002ACD33 /* CusomBottomSheet.swift in Sources */,
 				24206DA129916AB8002ACD33 /* BottomSheetView.swift in Sources */,
 				24DAD06129D0B256008E70D3 /* SampleGridView.swift in Sources */,
 				2429B1B329ABD31D009A732B /* Utils.swift in Sources */,
@@ -278,7 +278,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChatlaxSheet/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"custom-bottom-sheet/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.azbekyan94.ChatlaxSheet;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.azbekyan94.custom-bottom-sheet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -307,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChatlaxSheet/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"custom-bottom-sheet/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.azbekyan94.ChatlaxSheet;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.azbekyan94.custom-bottom-sheet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24206D8A299167F6002ACD33 /* Build configuration list for PBXProject "ChatlaxSheet" */ = {
+		24206D8A299167F6002ACD33 /* Build configuration list for PBXProject "custom-bottom-sheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24206D9B299167F6002ACD33 /* Debug */,
@@ -341,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24206D9D299167F6002ACD33 /* Build configuration list for PBXNativeTarget "ChatlaxSheet" */ = {
+		24206D9D299167F6002ACD33 /* Build configuration list for PBXNativeTarget "custom-bottom-sheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24206D9E299167F6002ACD33 /* Debug */,

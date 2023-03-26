@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ChatlaxSheetApp: App {
+struct CusomBottomSheet: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

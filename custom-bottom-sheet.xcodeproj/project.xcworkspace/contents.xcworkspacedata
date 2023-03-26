@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/aram/Work/custom-bottom-sheet/custom-bottom-sheet.xcodeproj">
    </FileRef>
 </Workspace>
