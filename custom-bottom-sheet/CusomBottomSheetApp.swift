@@ -1,6 +1,6 @@
 //
-//  ChatlaxSheetApp.swift
-//  ChatlaxSheet
+//  CustomBottomSheetApp.swift
+//  custom-bottom-sheet
 //
 //  Created by Арам on 06.02.2023.
 //

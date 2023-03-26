@@ -1,6 +1,6 @@
 //
 //  SampleGridView.swift
-//  ChatlaxSheet
+//  custom-bottom-sheet
 //
 //  Created by Арам on 26.03.2023.
 //
