@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct SampleGridView: View {
-	
-	let columns = [
-		GridItem(.flexible(), spacing: 20),
-		GridItem(.flexible(), spacing: 20),
-		GridItem(.flexible(), spacing: 20)
-	]
-	
-	// Grid is not animated properly for some reason
+    private let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+
 	var body: some View {
-		LazyVGrid(columns: columns) {
-			ForEach(0..<9) { _ in
-				Circle()
-					.frame(height: 150)
-			}
-		}
-		.padding()
-		.background(Color.white)
+        ScrollView([], showsIndicators: false) {
+            LazyVGrid(columns: columns, spacing: 20) {
+                ForEach(0..<4) { _ in
+                    Circle()
+                        .scaledToFit()
+                }
+            }
+            .padding()
+            .background(Color.white)
+        }
+        .scaledToFit()
 	}
 	
 }
